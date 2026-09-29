@@ -1,0 +1,79 @@
+:root {
+  --color-primary: #0071f8;
+  --color-red: #ee626b;
+  --color-white: #fffffe;
+  --color-black: #1e1e1e;
+  --color-bg-button: #1b7ffa;
+  --color-bg-card: #f7f7f7;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+ul {
+  list-style: none;
+}
+button,
+a {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  padding: 60px 100px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  width: 100%;
+  transform: translateX(-50%);
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 100px;
+  border-radius: 0 0 30px 30px;
+}
+
+nav ul {
+    gap: clamp(6px, 1vw, 30px);
+    align-items: center;
+    a {
+        color: var(--color-white);
+        border-radius: 20px;
+        padding: 8px 20px;
+        font-weight: 300;
+        transition: all 0.3s ease;
+        font-size: clamp(0.8rem, 1.8vw, 1rem);
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+    &:hover {
+      background-color: var(--color-bg-button);
+    }
+  }
+}
