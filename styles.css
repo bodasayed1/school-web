@@ -129,7 +129,7 @@ nav ul li:hover {
     font-size: 4rem;
     color: var(--color-black);
     font-weight: 900;
-    line-height: 64px;
+    line-height: 70px;
     margin-bottom: 40px;
     max-width: 500px;
     span {
